@@ -1,0 +1,9 @@
+# Release notes
+
+## v0.1.0 (unreleased)
+
+- Initial sandbox layout
+- Phase 1–6 exercises
+- Shared codebase (Python)
+
+Add your line above to practice merge conflicts.

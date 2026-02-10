@@ -32,7 +32,7 @@ A safe repo to **explore → try → break → fix → repeat**. No production c
 ## Goals per Person
 
 Use these to focus your learning and track progress. Tick in [progress/](progress/) or in your own notes.  
-For **phases 3–6**, these goals are best practiced **inside a team of 5**, where you can rotate roles (Driver, Navigator, Git Lead, Reviewer, Recorder) so everyone touches branching, PRs, conflicts, and recovery.
+For **phases 3–6**, these goals are best practiced **inside a team of 4**, where you can rotate roles (Driver, Navigator, Git Lead, Reviewer/Recorder) so everyone touches branching, PRs, conflicts, and recovery.
 
 ### 🟢 Learner (new to Git / GitHub)
 
@@ -40,17 +40,17 @@ For **phases 3–6**, these goals are best practiced **inside a team of 5**, whe
 |------|------|
 | Complete Phase 1 (first commit, view history, fix a mistake) | ☐ |
 | Complete Phase 2 (push to remote, pull, handle push rejected) | ☐ |
-| In a team of 5, create a branch, make commits, and merge into main together (Phase 3) | ☐ |
-| In a team of 5, open at least one PR using the repo template (Phase 4) | ☐ |
-| In a team of 5, help resolve at least one merge conflict (Phase 4 or 5) | ☐ |
-| In a team of 5, complete one “disaster” exercise (e.g. recover lost work — Phase 5) | ☐ |
-| In a team of 5, close one fake issue via PR in the team simulation (Phase 6) | ☐ |
+| In a team of 4, create a branch, make commits, and merge into main together (Phase 3) | ☐ |
+| In a team of 4, open at least one PR using the repo template (Phase 4) | ☐ |
+| In a team of 4, help resolve at least one merge conflict (Phase 4 or 5) | ☐ |
+| In a team of 4, complete one “disaster” exercise (e.g. recover lost work — Phase 5) | ☐ |
+| In a team of 4, close one fake issue via PR in the team simulation (Phase 6) | ☐ |
 
 ### 🟡 Reviewer (giving feedback on PRs)
 
 | Goal | Done |
 |------|------|
-| In your team of 5, review at least 2 PRs using the PR checklist | ☐ |
+| In your team of 4, review at least 2 PRs using the PR checklist | ☐ |
 | Leave at least one “request changes” with clear, kind feedback for a teammate | ☐ |
 | Approve a PR only after checking diff and description | ☐ |
 | Use agreed branch naming and commit message rules when commenting | ☐ |
@@ -59,7 +59,7 @@ For **phases 3–6**, these goals are best practiced **inside a team of 5**, whe
 
 | Goal | Done |
 |------|------|
-| For your team of 5, ensure main is protected (PR + 1 review required) | ☐ |
+| For your team of 4, ensure main is protected (PR + 1 review required) | ☐ |
 | Run or design one “disaster drill” for your team (e.g. recover from bad reset) | ☐ |
 | Add or improve one exercise or doc in the sandbox (for all teams) | ☐ |
 | Use SANDBOX_RULES when someone asks about force push / history rewrite | ☐ |
@@ -120,3 +120,4 @@ git-sandbox/
 ├── playground/            ← break anything safely
 └── _template/             ← exercise template (for maintainers)
 ```
+# newwave-github-sandbox

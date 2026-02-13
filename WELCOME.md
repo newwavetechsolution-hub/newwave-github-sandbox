@@ -20,8 +20,19 @@ This repository is a **safe practice space** for learning Git and GitHub with a 
 3. For exercises with an `expected-result.md`, use it as your **checklist**.
 4. Where available, run the **autocheck** from repo root:
 
+   **Mac/Linux:**
    ```bash
    python3 scripts/check_exercise.py phase-1-local-basics exercise-1-first-commit
+   ```
+
+   **Windows (Git Bash/PowerShell):**
+   ```bash
+   python scripts/check_exercise.py phase-1-local-basics exercise-1-first-commit
+   ```
+
+   **Windows (CMD):**
+   ```cmd
+   python scripts\check_exercise.py phase-1-local-basics exercise-1-first-commit
    ```
 
 ---

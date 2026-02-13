@@ -81,10 +81,25 @@ Full rules: [SANDBOX_RULES.md](SANDBOX_RULES.md).
 
 Some exercises have a `check.py` that verifies the result (e.g. file exists, script runs). From repo root:
 
+**Mac/Linux:**
 ```bash
 python3 scripts/check_exercise.py                              # all exercises
 python3 scripts/check_exercise.py phase-1-local-basics         # one phase
 python3 scripts/check_exercise.py phase-1-local-basics exercise-1-first-commit  # one exercise
+```
+
+**Windows (Git Bash/PowerShell):**
+```bash
+python scripts/check_exercise.py                              # all exercises
+python scripts/check_exercise.py phase-1-local-basics         # one phase
+python scripts/check_exercise.py phase-1-local-basics exercise-1-first-commit  # one exercise
+```
+
+**Windows (CMD):**
+```cmd
+python scripts\check_exercise.py                              # all exercises
+python scripts\check_exercise.py phase-1-local-basics         # one phase
+python scripts\check_exercise.py phase-1-local-basics exercise-1-first-commit  # one exercise
 ```
 
 Exercises without `check.py` are not auto-validated (e.g. “open a PR” or “review a PR”).

@@ -1,4 +1,4 @@
-# START HERE — First commit
+# START HERE — First commit. <Done>
 
 1. [ ] Create a file `hello.py` in this folder with: `print("Hello, Git!")`
 2. [ ] Run `git status` — you should see `hello.py` untracked

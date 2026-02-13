@@ -6,12 +6,21 @@ Do this once per machine before pushing to GitHub.
 
 In a terminal:
 
+**Mac/Linux/Windows (Git Bash/PowerShell):**
 ```bash
 git --version
 ```
 
+**Windows (CMD):**
+```cmd
+git --version
+```
+
 If this prints a version (for example, `git version 2.x.x`), you’re good.  
-If not, install Git using your OS instructions (for Ubuntu: `sudo apt install git`).
+If not, install Git:
+- **Mac:** `brew install git` or download from [git-scm.com](https://git-scm.com)
+- **Linux (Ubuntu/Debian):** `sudo apt install git`
+- **Windows:** Download Git from [git-scm.com](https://git-scm.com) (includes Git Bash)
 
 ---
 
@@ -28,6 +37,7 @@ You’ll need this account for repository access and SSH keys.
 
 Tell Git who you are. In your terminal:
 
+**Mac/Linux/Windows (Git Bash/PowerShell/CMD):**
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
@@ -35,6 +45,7 @@ git config --global user.email "your-email@example.com"
 
 You can verify:
 
+**Mac/Linux/Windows (Git Bash/PowerShell/CMD):**
 ```bash
 git config --global user.name
 git config --global user.email
@@ -46,15 +57,27 @@ git config --global user.email
 
 List keys in `~/.ssh`:
 
+**Mac/Linux/Windows (Git Bash/PowerShell):**
 ```bash
 ls ~/.ssh
+```
+
+**Windows (CMD):**
+```cmd
+dir %USERPROFILE%\.ssh
 ```
 
 If you see files like `id_ed25519` and `id_ed25519.pub`, you probably already have a usable key.  
 Show the **public** key:
 
+**Mac/Linux/Windows (Git Bash/PowerShell):**
 ```bash
 cat ~/.ssh/id_ed25519.pub
+```
+
+**Windows (CMD):**
+```cmd
+type %USERPROFILE%\.ssh\id_ed25519.pub
 ```
 
 If that prints a long line starting with `ssh-ed25519`, you can skip to **Step 4**.
@@ -65,19 +88,33 @@ If that prints a long line starting with `ssh-ed25519`, you can skip to **Step 4
 
 If you don’t see `id_ed25519.pub`, create a new key pair:
 
+**Mac/Linux/Windows (Git Bash/PowerShell):**
 ```bash
+ssh-keygen -t ed25519 -C "your-email@example.com"
+```
+
+**Windows (CMD):**
+```cmd
 ssh-keygen -t ed25519 -C "your-email@example.com"
 ```
 
 When prompted:
 
-- **File location:** press Enter to accept the default (`/home/you/.ssh/id_ed25519`).
+- **File location:** press Enter to accept the default:
+  - Mac/Linux: `/home/you/.ssh/id_ed25519`
+  - Windows: `C:\Users\YourName\.ssh\id_ed25519`
 - **Passphrase:** optional but recommended; you can also press Enter twice for no passphrase.
 
 Then show the **public** key:
 
+**Mac/Linux/Windows (Git Bash/PowerShell):**
 ```bash
 cat ~/.ssh/id_ed25519.pub
+```
+
+**Windows (CMD):**
+```cmd
+type %USERPROFILE%\.ssh\id_ed25519.pub
 ```
 
 You should see one long line starting with `ssh-ed25519`.
@@ -91,8 +128,14 @@ You should see one long line starting with `ssh-ed25519`.
 
 1. Copy the entire output of:
 
+   **Mac/Linux/Windows (Git Bash/PowerShell):**
    ```bash
    cat ~/.ssh/id_ed25519.pub
+   ```
+
+   **Windows (CMD):**
+   ```cmd
+   type %USERPROFILE%\.ssh\id_ed25519.pub
    ```
 
    It should look like:
@@ -118,6 +161,7 @@ If you see “Key is invalid. You must supply a key in OpenSSH public key format
 
 Back in the terminal:
 
+**Mac/Linux/Windows (Git Bash/PowerShell/CMD):**
 ```bash
 ssh -T git@github.com
 ```
@@ -132,6 +176,7 @@ Hi your-username! You've successfully authenticated, but GitHub does not provide
 
 At this point, SSH is working, and you can use URLs like:
 
+**Mac/Linux/Windows (Git Bash/PowerShell/CMD):**
 ```bash
 git@github.com:your-username/your-repo.git
 ```
@@ -142,6 +187,7 @@ git@github.com:your-username/your-repo.git
 
 If you prefer HTTPS (for example, for students who don’t want to manage SSH keys yet), you can set your remote like:
 
+**Mac/Linux/Windows (Git Bash/PowerShell/CMD):**
 ```bash
 git remote set-url origin https://github.com/your-username/your-repo.git
 ```

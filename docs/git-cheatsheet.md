@@ -2,6 +2,8 @@
 
 Quick reference for commands used in the sandbox.
 
+> **Note:** All Git commands work the same on Mac/Linux/Windows (Git Bash/PowerShell/CMD).
+
 ---
 
 ## Basics
